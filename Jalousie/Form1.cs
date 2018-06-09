@@ -32,7 +32,6 @@ namespace Jalousie
                 "Соломка",
                 "Текстиль"
             };
-
             comboBox1.DataSource = list;
 
             comboBox1.SelectedIndex = 0;
