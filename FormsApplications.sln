@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoView", "FotoView\FotoVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoView2", "FotoView2\FotoView2.csproj", "{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch", "Stopwatch\Stopwatch.csproj", "{271C67D9-6026-43EB-8C0C-71417B5626D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TImer", "TImer\TImer.csproj", "{6E5CD02F-D009-4562-9642-BFBE59363BD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{271C67D9-6026-43EB-8C0C-71417B5626D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{271C67D9-6026-43EB-8C0C-71417B5626D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{271C67D9-6026-43EB-8C0C-71417B5626D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{271C67D9-6026-43EB-8C0C-71417B5626D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
