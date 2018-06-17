@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using System.IO;
 
-
-namespace FotoView
+namespace FotoView2
 {
     public partial class Form1 : Form
     {
+        List<string> imgList = new List<string>();
+        int nImg = 0;
+
         int pbw, pbh, pbX, pbY;
 
         string aPath;
@@ -21,51 +24,49 @@ namespace FotoView
         public Form1()
         {
             InitializeComponent();
-
             pbh = pictureBox1.Height;
             pbw = pictureBox1.Width;
-
             pbX = pictureBox1.Location.X;
             pbY = pictureBox1.Location.Y;
 
-            listBox1.Sorted = true;
-
             DirectoryInfo di = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures));
+
             aPath = di.FullName;
 
-            label1.Text = aPath;
-
-            FillListBox(aPath);
-
-            ToolTip t = new ToolTip();
-            
-
         }
 
-        private bool FillListBox(string aPath)
+        private Boolean FillListBox(string aPath)
         {
             DirectoryInfo di = new DirectoryInfo(aPath);
+
             FileInfo[] fi = di.GetFiles("*.jpg");
 
-            listBox1.Items.Clear();
+            imgList.Clear();
 
-            foreach (FileInfo fc in fi)
-            {
-                listBox1.Items.Add(fc.Name);
-            }
+            foreach (FileInfo item in fi)
+                imgList.Add(item.Name);
 
-            label1.Text = aPath;
-
-            if (fi.Length == 0) return false;
+            if (fi.Length == 0)
+                return false;
             else
             {
-                listBox1.SelectedIndex = 0;
+                nImg = 0;
+                ShowPicture(aPath + "\\" + imgList[nImg]);
+
+                button2.Enabled = false;
+
+                if (imgList.Count == 1)
+                    button3.Enabled = false;
+
+                this.Text = aPath;
+
                 return true;
-            }
+            } 
+
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ShowPicture(string aPicture)
         {
             double mh, mw;
 
@@ -73,14 +74,14 @@ namespace FotoView
             pictureBox1.Left = pbX;
 
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox1.Image = new Bitmap(aPath + "\\" + listBox1.SelectedItem.ToString());
+            pictureBox1.Image = new Bitmap(aPicture);
 
             if ((pictureBox1.Image.Width > pbw) || (pictureBox1.Image.Height > pbh))
             {
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 mh = (double)pbh / (double)pictureBox1.Image.Height;
-                mw = (double)pbw / (double)pictureBox1.Image.Width;
+                mw = (double)pbw / (double)pictureBox1.Image.Height;
 
                 if (mh < mw)
                 {
@@ -98,18 +99,52 @@ namespace FotoView
 
                 pictureBox1.Visible = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (!button3.Enabled)
+                button3.Enabled = true;
+
+            if (nImg > 0)
+            {
+                nImg--;
+                ShowPicture(aPath + "\\" + imgList[nImg]);
+
+                if (nImg == 0)
+                    button2.Enabled = false;
+
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!button2.Enabled)
+                button2.Enabled = true;
+
+            if (nImg < imgList.Count)
+            {
+                nImg++;
+                ShowPicture(aPath + "\\" + imgList[nImg]);
+                if (nImg == imgList.Count - 1)
+                    button3.Enabled = false;
+            }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fb = new FolderBrowserDialog();
-            fb.Description = "Виберіть папку,\n" + "в якій знаходяться ілюстрації";
+            fb.Description = "Виберіть папку\nв якій знаходяться ілюстрації";
+
             fb.ShowNewFolderButton = false;
+
+            fb.SelectedPath = aPath;
+
             if (fb.ShowDialog() == DialogResult.OK)
             {
                 aPath = fb.SelectedPath;
-                label1.Text = aPath;
 
                 if (!FillListBox(fb.SelectedPath))
                     pictureBox1.Image = null;

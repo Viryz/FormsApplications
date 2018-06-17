@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoView", "FotoView\FotoView.csproj", "{ECD75E86-B29F-42E0-929F-F8FBE63D46E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoView2", "FotoView2\FotoView2.csproj", "{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ECD75E86-B29F-42E0-929F-F8FBE63D46E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECD75E86-B29F-42E0-929F-F8FBE63D46E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECD75E86-B29F-42E0-929F-F8FBE63D46E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BFDE15-233E-4DAF-9A2A-BCEAAA4F63E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
