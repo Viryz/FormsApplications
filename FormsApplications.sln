@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsApp", "..\FormsApp\For
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conveter", "..\Conveter\Conveter\Conveter.csproj", "{30F343EF-A77C-4660-8001-D72762B5293E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextShow", "TextShow\TextShow.csproj", "{C54F07CA-D9E3-4D7B-933E-5B319C126D03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagram", "Diagram\Diagram.csproj", "{A3CE017E-618D-4AB3-BEA3-56E498A2B468}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{30F343EF-A77C-4660-8001-D72762B5293E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30F343EF-A77C-4660-8001-D72762B5293E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30F343EF-A77C-4660-8001-D72762B5293E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54F07CA-D9E3-4D7B-933E-5B319C126D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54F07CA-D9E3-4D7B-933E-5B319C126D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54F07CA-D9E3-4D7B-933E-5B319C126D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54F07CA-D9E3-4D7B-933E-5B319C126D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CE017E-618D-4AB3-BEA3-56E498A2B468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CE017E-618D-4AB3-BEA3-56E498A2B468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CE017E-618D-4AB3-BEA3-56E498A2B468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CE017E-618D-4AB3-BEA3-56E498A2B468}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
