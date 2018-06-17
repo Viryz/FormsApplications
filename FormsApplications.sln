@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch", "Stopwatch\Stop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TImer", "TImer\TImer.csproj", "{6E5CD02F-D009-4562-9642-BFBE59363BD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsApp", "..\FormsApp\FormsApp\FormsApp.csproj", "{3DCF1DD5-0625-4B17-9B6F-C334098274EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conveter", "..\Conveter\Conveter\Conveter.csproj", "{30F343EF-A77C-4660-8001-D72762B5293E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5CD02F-D009-4562-9642-BFBE59363BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DCF1DD5-0625-4B17-9B6F-C334098274EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF1DD5-0625-4B17-9B6F-C334098274EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DCF1DD5-0625-4B17-9B6F-C334098274EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF1DD5-0625-4B17-9B6F-C334098274EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F343EF-A77C-4660-8001-D72762B5293E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F343EF-A77C-4660-8001-D72762B5293E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F343EF-A77C-4660-8001-D72762B5293E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F343EF-A77C-4660-8001-D72762B5293E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
