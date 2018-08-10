@@ -58,7 +58,7 @@ namespace Diagram
 
             Font hFont = new Font("Tahoma", 14, FontStyle.Regular);
 
-            string header = "Зміна курса долара";
+            string header = "Зміна курсу долара";
 
             int wh = (int)g.MeasureString(header, hFont).Width;
 
